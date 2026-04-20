@@ -16,6 +16,8 @@ export default function AdminNav({ role }: Props) {
             <Link href="/admin/requests" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Requests</Link>
             <Link href="/admin/claims" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Claims</Link>
             <Link href="/admin/users" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Users</Link>
+            <Link href="/admin/flags" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Flags</Link>
+            <Link href="/admin/audit-log" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Audit Log</Link>
             {role === 'super_admin' && (
               <Link href="/admin/settings" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Settings</Link>
             )}

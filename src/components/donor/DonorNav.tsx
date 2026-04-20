@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NotificationBell from '@/components/ui/NotificationBell'
 
 interface Props { userId: string }
 
@@ -10,6 +11,7 @@ export default function DonorNav({ userId }: Props) {
         <div className="flex items-center gap-1 text-sm">
           <Link href="/donor/feed" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">Browse</Link>
           <Link href="/donor/history" className="px-3 py-1.5 rounded-lg hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors">My giving</Link>
+          <NotificationBell userId={userId} />
         </div>
       </div>
     </nav>

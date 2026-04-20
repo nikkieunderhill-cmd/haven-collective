@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/opt/homebrew/bin/brew --version*)",
+      "Bash(npm run lint*)",
+      "Bash(npm run typecheck*)"
+    ]
+  }
+}

@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import type { OnboardingData } from '@/app/recipient/onboarding/page'
+import type { OnboardingData } from '@/app/recipient/(portal)/onboarding/page'
 
 const schema = z.object({
   full_name: z.string().min(2, 'Please enter your full legal name'),

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import type { OnboardingData } from '@/app/recipient/onboarding/page'
+import type { OnboardingData } from '@/app/recipient/(portal)/onboarding/page'
 
 interface Props {
   data: OnboardingData

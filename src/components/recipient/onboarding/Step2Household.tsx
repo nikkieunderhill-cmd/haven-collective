@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import type { OnboardingData } from '@/app/recipient/onboarding/page'
+import type { OnboardingData } from '@/app/recipient/(portal)/onboarding/page'
 
 const schema = z.object({
   household_size: z.number().min(1).max(20),

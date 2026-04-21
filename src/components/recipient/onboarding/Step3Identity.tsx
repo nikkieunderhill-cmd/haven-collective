@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import type { OnboardingData } from '@/app/recipient/onboarding/page'
+import type { OnboardingData } from '@/app/recipient/(portal)/onboarding/page'
 
 interface Props {
   data: OnboardingData

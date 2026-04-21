@@ -6,8 +6,8 @@ import { z } from 'zod'
 import type { OnboardingData } from '@/app/recipient/onboarding/page'
 
 const schema = z.object({
-  household_size: z.coerce.number().min(1).max(20),
-  num_dependents: z.coerce.number().min(0).max(20),
+  household_size: z.number().min(1).max(20),
+  num_dependents: z.number().min(0).max(20),
 })
 
 type FormData = z.infer<typeof schema>
